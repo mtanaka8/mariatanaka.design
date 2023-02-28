@@ -1,12 +1,51 @@
+* {
+  box-sizing: border-box;
+}
 body {
-    font-family: Marion Bold, sans-serif;
+    font-family: 'Marion Bold', sans-serif;
     font-weight: 500;
+    font-size: 100%; 
     background: #efecdb;
-  s}
-  * {
-    box-sizing: border-box;
- }
-  
+}
+ 
+  a {
+    color: inherit;
+    font-weight: 500;
+    
+  }
+  h1 {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+
+  a:hover img {
+    filter: none;
+  }
+  p {
+    margin: 0;
+  }
+
+  .typewrite {
+    /* the border that acts like a text typing character */
+    border-right: 2px solid rgba(255, 255, 255, .75);
+
+    /* the animation - css */
+    animation: blinkTextCursor 600ms infinite normal;
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: rgba(255, 255, 255, 0.0);
+    }
+
+
+  }
+   /* Horizontal scroll-bar */
   /* hide scrollbar */
   ::-webkit-scrollbar {
     width: 1px;
@@ -34,7 +73,7 @@ body {
       transform-style: preserve-3d;
     padding-bottom: 10rem;
   }
-  .img-wrapper {
+  .horizontal-scroll-wrapper .img-wrapper {
     transform: rotate(90deg);
     display: flex;
     align-items: center;
@@ -45,10 +84,22 @@ body {
     transition: 1s;
   }
   
-  .img-wrapper:hover {
+  .horizontal-scroll-wrapper .img-wrapper:hover {
    min-height: 65vh;
   }
-  
+  .horizontal-scroll-wrapper .img-wrapper a {
+    overflow: hidden;
+    display: block;
+    padding: 1vh ;
+    background: #efecdb;
+    box-shadow: 0 10px 50px #5f2f1182;
+  }
+  .horizontal-scroll-wrapper img {
+    max-width: 45vh;
+    max-height: 50vh;
+    transition: .5s;
+    vertical-align: top;
+  }
   .slower {
     transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(-10vh);
   }
@@ -76,76 +127,12 @@ body {
   .last {
     transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(25vh) translateY(-8vh) ;
   }
-  .scroll-info, header {
+  .scroll-info {
     position: absolute;
     left: 1rem;
-  }
-  
-  
-  header {
-    bottom: 1rem;
-  }
-  .container {
-    font-family: 'Marion Bold',Marion, monospace;
-    text-align: center;
-    height: auto;
-    margin: auto;
-    font-size: 4rem;
-    font-weight: 600;
-    top: 1rem;
-  }
-  a {
-    color: inherit;
-    font-weight: 500;
-    
-  }
-  h1 {
-    font-weight: 300;
-    font-size: 1rem;
-  }
-  
-  .img-wrapper a {
-    overflow: hidden;
-    display: block;
-    padding: 1vh ;
-    background: #efecdb;
-    box-shadow: 0 10px 50px #5f2f1182;
-  }
-  img {
-    max-width: 45vh;
-    max-height: 50vh;
-    transition: .5s;
-    vertical-align: top;
-  }
-  a:hover img {
-    filter: none;
-  }
-  p {
-    margin: 0;
-  }
-  .scroll-info {
     display: flex;
     align-items: center;
 
   }
-    .typewrite {
-        /* the border that acts like a text typing character */
-        border-right: 2px solid rgba(0,0,0,1);
-      
-    
-        /* the animation - css */
-        animation:blinkTextCursor 600ms infinite normal;
-    }
-    
-    @keyframes blinkTextCursor {
-        from {
-            border-right-color: rgba(0,0,0,1);
-        }
-    
-        to {
-            border-right-color: rgba(0,0,0,0);
-        }
-      
-      
-  }
+  
   
