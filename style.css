@@ -7,6 +7,16 @@ body {
     font-size: 100%; 
     background: #efecdb;
 }
+
+.container {
+  color: #392e7d;
+  font-family: 'Clarendon URW', monospace;
+  text-align: center;
+  height: auto;
+  margin: auto;
+  font-size: 4rem;
+  font-weight: 600;
+}
  
   a {
     color: inherit;
@@ -76,7 +86,7 @@ body {
       transform-style: preserve-3d;
     padding-bottom: 10rem;
   }
-  .horizontal-scroll-wrapper .img-wrapper {
+  .img-wrapper {
     transform: rotate(90deg);
     display: flex;
     align-items: center;
@@ -103,6 +113,11 @@ body {
     transition: .5s;
     vertical-align: top;
   }
+
+  .img-wrapper:hover {
+    min-height: 65vh;
+   }
+   
   .slower {
     transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(-10vh);
   }
