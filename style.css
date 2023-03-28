@@ -52,11 +52,14 @@ body {
     height: 1px;
   }
   
-  
   .external {
     overflow: hidden;
     height: 100vh;
   }
+
+  .img-wrapper:hover {
+    min-height: 65vh;
+   }
   
   .horizontal-scroll-wrapper {
     display: flex;

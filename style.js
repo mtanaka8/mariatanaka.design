@@ -19,3 +19,4 @@ function typeOut(string) {
 
      
 typeOut(txt);
+
