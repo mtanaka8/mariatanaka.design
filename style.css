@@ -2,15 +2,15 @@
   box-sizing: border-box;
 }
 body {
-    font-family: 'Marion Bold', sans-serif;
+    font-family: 'Marion', sans-serif;
     font-weight: 500;
     font-size: 100%; 
-    background: #efecdb;
+    background: #fffef5;
 }
 
 .container {
-  color: #392e7d;
-  font-family: 'Clarendon URW', monospace;
+  color: #000000;
+  font-family: 'Marion', monospace;
   text-align: center;
   height: auto;
   margin: auto;
