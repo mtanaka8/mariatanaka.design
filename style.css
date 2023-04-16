@@ -1,3 +1,16 @@
+/* 
+TABLE OF CONTENTS
+-GLOBAL RESET
+-BODY (TYPE, COLOR,)
+-CONTAINERS
+-GRID
+-LINKS
+-HEADINGS
+-TYPEWRITE
+*/
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -5,27 +18,59 @@ body {
     font-family: 'Marion', sans-serif;
     font-weight: 500;
     font-size: 100%; 
-    background: #fffef5;
+    background: #212025;
+    color:#ffffff;
+    text-decoration: none;
 }
 
+
+
 .container {
-  color: #000000;
-  font-family: 'Marion', monospace;
-  text-align: center;
+  color: #ffffff;
+  font-family: 'marion' sans-serif;
+  max-width: 1200px;
   height: auto;
   margin: auto;
-  font-size: 4rem;
+  font-size: 1rem;
   font-weight: 600;
 }
- 
+ /* GRID */
+
+ @media (min-width: 768px) {
+  .row {
+    display: flex;
+    gap: 2em;
+    margin-bottom: 2em;
+  }
+  .one-half {
+    width: 50%;
+  }
+
+  .one-third {
+    width: 33.3333%;
+  }
+ }
+ .logomark {
+  padding-top: auto 0;
+  padding-bottom: 0%;
+ }
+
+ .project-content {
+  padding-top: 30px;
+ }
+
+
+
   a {
-    color: inherit;
+    color: #ffffff;
     font-weight: 500;
     
   }
   h1 {
-    font-weight: 300;
-    font-size: 1rem;
+    font-weight: 200;
+    font-size: 45px;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
 
@@ -41,8 +86,19 @@ body {
     border-right: 2px solid rgba(255, 255, 255, .75);
 
     /* the animation - css */
-    animation: blinkTextCursor 600ms infinite normal;
+    animation: blinkTextCursor 700ms infinite normal;
+
+    font-family: "Marion",sans-serif;
+    font-size: 3.6em;
+    margin: 0;
+    position:relative;
+    left: 37%;
+    top: 20%;
+
+  
 }
+
+
 
 @keyframes blinkTextCursor {
     from {
@@ -96,6 +152,27 @@ body {
     transform: rotate(90deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
     transition: 1s;
   }
+  img.circular {
+    display: block;
+    border-radius: 100%;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4.5em;
+  }
+
+  /* #IMAGES */
+  img {
+    max-width: 99%;
+    height: auto;
+  }
+
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 20%;
+  }
   
   .horizontal-scroll-wrapper .img-wrapper:hover {
    min-height: 65vh;
@@ -109,7 +186,7 @@ body {
   }
   .horizontal-scroll-wrapper img {
     max-width: 45vh;
-    max-height: 50vh;
+    max-height: 40vh;
     transition: .5s;
     vertical-align: top;
   }
@@ -152,5 +229,122 @@ body {
     align-items: center;
 
   }
+   /* Page Fade-ins */
+   @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   
+  main,
+  fade-in {
+    opacity: 0;
+    animation: fade-in ease-in-out 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+  }
   
+  @keyframes fade-and-move-in {
+    from {
+      transform: translate(0, -20px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  
+  .fade-and-move-in * {
+    opacity: 0;
+    animation: fade-and-move-in ease-out 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+  }
+  
+  .fade-and-move-in *:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .fade-and-move-in *:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .fade-and-move-in *:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  .fade-and-move-in *:nth-child(4) {
+    animation-delay: 0.7s;
+  }
+  .fade-and-move-in *:nth-child(5) {
+    animation-delay: 1s;
+  }
+  .fade-and-move-in *:nth-child(6) {
+    animation-delay: 1.2s;
+  }
+  .fade-and-move-in *:nth-child(7) {
+    animation-delay: 1.4s;
+  }
+  .fade-and-move-in *:nth-child(8) {
+    animation-delay: 1.6s;
+  }
+  .fade-and-move-in *:nth-child(9) {
+    animation-delay: 1.8s;
+  }
+
+  /* HEADER SITE NAV */
+
+.site-nav ul {
+  margin-top: -60px;
+  margin-right: 20px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.site-nav a {
+  padding: 1em;
+  display: block;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: #e7b2a1;
+}
+
+.site-nav .menu-button {
+  display: none;
+}
+  
+.contact-list {
+  text-decoration: none;
+  list-style: none;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.hero-section img {
+  width: 700px;
+  margin-top: 100;
+}
+
+.site-footer {
+  text-decoration: none;
+  list-style: none;
+  justify-content: flex-end;
+
+}
+
+.row-stacked {
+  justify-content: center;
+  left: 50%;
+}
+
+
