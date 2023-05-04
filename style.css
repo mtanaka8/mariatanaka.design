@@ -373,7 +373,7 @@ body {
 .patterns {
   background-image: url(img/1152355.jpeg);
   background-size: contain;
-  padding-top: 4em;
+  padding-top: 6em;
   padding-bottom: 2em;
 }
 
@@ -389,15 +389,64 @@ body {
 
 
 .packaging {
-  padding-top: 2em;
+  padding-top: 3
+em;
 }
 
 .hero {
   padding-bottom: 3em;
+  padding-right: 3em;
 }
+
 
 .subcontent-image-grid {
   flex-wrap: wrap;
   gap: 50%;
   padding-left: 1em;
+}
+
+.hgbackground {
+  background-color: #331a3c;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.hgprocess {
+  padding-top: 4em;
+  padding-bottom: 4em;
+
+}
+
+.hgdeliverables {
+  padding-top: 4em;
+}
+
+.dohapackaging {
+  padding-top: 4em;
+}
+
+.dohalogo {
+  padding-top: 1em;
+
+}
+
+.dohapatterns {
+  background-image: url(img/qatar3000-64e1dc05f14d.jpeg);
+  background-repeat:repeat-x;
+  background-position: top;
+  padding-top: 3em;
+  padding-bottom: 5em;
+}
+
+.dohahero {
+  padding-right: -3em;
+  padding-top: 2em;
+}
+
+.bookcoverfloat {
+  background-image: url(img/istockphoto-1072116056-640x640.jpeg);
+  background-repeat:repeat-x;
+  background-position: center;
+  padding-top: 8em;
+  padding-bottom: 5em;
 }
