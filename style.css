@@ -18,8 +18,8 @@ body {
     font-family: 'Marion', sans-serif;
     font-weight: 500;
     font-size: 100%; 
-    background: #15161f;
-    color:#ffffff;
+    background: #dddddd;
+    color:#282828;
     text-decoration: none;
 }
 
@@ -63,30 +63,36 @@ body {
  }
 
  .project-content {
-  padding-top: 30px;
+  padding-top: 28px;
  }
 
  .p {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
 
 
 
 
   a {
-    color: #ffffff;
+    color: #282828;
     font-weight: 500;
     
   }
   h1 {
     font-weight: 200;
-    font-size: 45px;
-    color: #ffffff;
-    font-family: 'Trebuchet MS', Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans; 
+    font-size: 60px;
+    color: #383838;
+    font-family:'Marion';
+    font-weight: 600;
+    padding-top: 5em;
+    padding-bottom: 9em;
+    position: absolute;
+    transform: rotate(-90deg);
+   
   }
 
   h2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'GT Super';
   }
 
   h3 {
@@ -184,7 +190,7 @@ body {
 
   /* #IMAGES */
   img {
-    max-width: 85%;
+    max-width: 90%;
     height: auto;
   }
 
