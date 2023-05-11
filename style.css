@@ -23,6 +23,13 @@ body {
     text-decoration: none;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 
 
 .container {
@@ -68,6 +75,11 @@ body {
 
  .p {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
  }
 
 
@@ -98,6 +110,12 @@ body {
   h3 {
     font-size: 1.5em;
   }
+.row {
+  display: flex;
+  gap: 2%;
+  margin-bottom:5%;
+  justify-content: center;
+}
 
 
 
@@ -106,6 +124,12 @@ body {
   }
   p {
     margin: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    justify-content: center;
   }
 
   .typewrite {
@@ -121,6 +145,8 @@ body {
     position:relative;
     left: 37%;
     top: 20%;
+
+  
 
   
 }
@@ -390,16 +416,12 @@ body {
   display: flex;
 }
 
-.patterns {
-  background-image: url(img/1152355.jpeg);
-  background-size: contain;
-  padding-top: 6em;
-  padding-bottom: 2em;
-}
+
 
 .logo {
   size-adjust: 3em;
-  padding-top: 4em;
+  padding-top: 2em;
+  margin-bottom: 3em;
 }
 
 .hero-section {
@@ -407,14 +429,19 @@ body {
 
 }
 
-
-.packaging {
-  padding-top: 3
-em;
+.patterns {
+  padding-bottom: 2em;
+  padding-top: 4em;
 }
 
+
+.packaging {
+  padding-top: 3em;
+}
+
+
 .hero {
-  padding-bottom: 3em;
+  padding-bottom: 1em;
   padding-right: 3em;
 }
 
@@ -426,7 +453,7 @@ em;
 }
 
 .hgbackground {
-  background-color: #ffffff;
+  background-color: #fffbee;
   padding-top: 3em;
   padding-bottom: 3em;
 }
@@ -446,16 +473,15 @@ em;
 }
 
 .dohalogo {
-  padding-top: 1em;
+  padding-top: 3em;
+  padding-bottom: 2em;
 
 }
 
 .dohapatterns {
-  background-image: url(img/qatar3000-64e1dc05f14d.jpeg);
-  background-repeat:repeat-x;
-  background-position: top;
-  padding-top: 3em;
-  padding-bottom: 5em;
+  padding-top: 6em;
+  padding-bottom: 3em;
+  background-color: #e7b2a1;
 }
 
 .dohahero {
@@ -464,10 +490,8 @@ em;
 }
 
 .bookcoverfloat {
-  background-image: url(img/istockphoto-1072116056-640x640.jpeg);
-  background-repeat:repeat-x;
-  background-position: center;
-  padding-top: 8em;
+  padding-top: 4em;
   padding-bottom: 5em;
+  text-decoration-color: #dddddd;
 }
 
