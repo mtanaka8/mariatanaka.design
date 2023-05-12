@@ -14,7 +14,7 @@ function typeOut(string) {
       typeOut(txt);
     }
     //set the time delay
-  }, 150);
+  }, 130);
 }
 
      

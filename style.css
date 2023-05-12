@@ -95,20 +95,20 @@ body {
   h1 {
     font-weight: 200;
     font-size: 60px;
-    color:#e7b2a1;
+    color:#e99377;
     font-family:'Clarendon', sans-serif;
     font-weight: 600;
-    padding-top: 5em;
-    padding-bottom: 9em;
-    padding-left: -10em;
-    overflow-y: -3em;
+    padding-top: 0.12em;
+    padding-bottom: 6em;
+    overflow-y: -2em;
+    overflow-x: 4em;
     position: absolute;
     transform: rotate(-90deg);
    
   }
 
   h2 {
-    font-family: 'GT Super';
+    font-family: 'cursive';
     font-size: 30px;
   }
 
@@ -117,6 +117,7 @@ body {
     font-family: 'Helvetica',sans-serif;
     padding-top: -1em;
   }
+
 .row {
   display: flex;
   gap: 2%;
@@ -145,7 +146,7 @@ body {
     border-right: 2px solid rgba(255, 255, 255, .75);
 
     /* the animation - css */
-    animation: blinkTextCursor 700ms infinite normal;
+    animation: blinkTextCursor 900ms infinite normal;
 
     font-family: "Marion",sans-serif;
     font-size: 3.6em;
@@ -153,6 +154,7 @@ body {
     position:relative;
     left: 37%;
     top: 20%;
+
 
   
 
@@ -197,7 +199,7 @@ body {
     transform-origin: right top;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 0;
+    padding: 2em;
     height: 100vw;
     perspective: 1px;
       transform-style: preserve-3d;
@@ -357,7 +359,7 @@ body {
   /* HEADER SITE NAV */
 
 .site-nav ul {
-  margin-top: -60px;
+  margin-top: -40px;
   margin-right: 20px;
   padding: 0;
   list-style: none;
@@ -526,7 +528,7 @@ button.ghost {
   list-style: none;
   margin-bottom: -3em;
   &:hover {
-    background-color: rgba(0,0,0,.6);
+    background-color:#e99377;
     color: #fff;
   }
 }
