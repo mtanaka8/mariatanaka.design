@@ -37,6 +37,7 @@ body {
   max-width: 1200px;
   height: auto;
   margin: auto;
+  margin-top: 2em;
   font-size: 1rem;
   font-weight: 600;
   justify-content: center;
@@ -149,10 +150,10 @@ body {
     animation: blinkTextCursor 900ms infinite normal;
 
     font-family: "Marion",sans-serif;
-    font-size: 3.6em;
+    font-size: 3.8em;
     margin: 0;
     position:relative;
-    left: 37%;
+    left: 35%;
     top: 20%;
 
 
@@ -204,6 +205,7 @@ body {
     perspective: 1px;
       transform-style: preserve-3d;
     padding-bottom: 10rem;
+    margin-top: -5em;
   }
   .img-wrapper {
     transform: rotate(90deg);
@@ -244,8 +246,8 @@ body {
     overflow: hidden;
     display: block;
     padding: 1vh ;
-    background: #efecdb;
-    box-shadow: 0 10px 50px #5f2f1182;
+    background: #fffef9;
+    box-shadow: 0 10px 50px #bc867682;
   }
   .horizontal-scroll-wrapper img {
     max-width: 47vh;
