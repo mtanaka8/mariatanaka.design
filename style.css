@@ -33,6 +33,19 @@ body {
 
 
 .container {
+  font-family: 'Marion',sans-serif;
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  margin-top: 2em;
+  font-size: 1rem;
+  justify-content: center;
+  padding: auto;
+  align-items: center;
+
+}
+
+.typewritename {
   font-family: 'marion' sans-serif;
   max-width: 1200px;
   height: auto;
@@ -43,8 +56,8 @@ body {
   justify-content: center;
   padding: auto;
   align-items: center;
-
 }
+
  /* GRID */
 
  @media (min-width: 768px) {
@@ -75,12 +88,13 @@ body {
  }
 
  .p {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Franklin Gothic', sans-serif;
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  font-size: 35px;
  }
 
 
@@ -109,8 +123,8 @@ body {
   }
 
   h2 {
-    font-family: 'cursive';
-    font-size: 30px;
+    font-family: 'Helvetica';
+    font-size: 40px;
   }
 
   h3 {
@@ -170,7 +184,7 @@ body {
     }
 
     to {
-        border-right-color: rgba(255, 255, 255, 0.0);
+        border-right-color:#e99377;
     }
 
 
@@ -567,5 +581,9 @@ button.ghost {
 
 .subtext {
   margin-bottom: 5em;
-  margin-top: -5em;
+  margin-top: -5.5em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+
 }
+
