@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'Hi, I\'m Maria.';
+var txt = 'Hey, I\'m Maria.';
 
 function typeOut(string) {
   //begin delay for each letter typed
